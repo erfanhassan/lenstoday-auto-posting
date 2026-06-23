@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lens Today - Your Personal News Radar</title>
+    <meta name="description" content="Lens Today is an automated digital news agency and aggregator platform. Stay informed quickly with the latest headlines, short summaries, and breaking stories.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-placeholder" title="Lens Today Logo">
+            <!-- Blank placeholder specifically reserved to insert the Lens Today logo -->
+            Lens Today Logo
+        </div>
+        <nav class="nav-links">
+            <a href="#about">How It Works</a>
+            <a href="#news-feed">Latest News</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="about-section">
+            <div class="container">
+                <h1>Lens Today</h1>
+                <p class="about-text">Lens Today acts as your personal news radar. Rather than writing articles manually, our system constantly scans trusted news outlets across the web around the clock. We automatically gather the most important headlines, organize them, and link you directly to the original sources. When news breaks globally, our feed updates instantly to bring the stories straight to your screen.</p>
+            </div>
+        </section>
+
+        <section id="news-feed" class="news-feed-section">
+            <div class="container">
+                <div class="news-grid" id="news-grid">
+                    <!-- News items will be dynamically injected here by the Replit backend script -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-links">
+                <button class="link-btn" onclick="openModal('terms-modal')">Terms of Service</button>
+                <button class="link-btn" onclick="openModal('privacy-modal')">Privacy Policy</button>
+            </div>
+            <p class="copyright">&copy; 2026 Lens Today. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modals for Legal Documents -->
+    <div id="terms-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('terms-modal')">&times;</span>
+            <h2>Terms of Service</h2>
+            <div class="modal-body">
+                <p class="last-updated"><em>Last Updated: June 23, 2026</em></p>
+                
+                <h3>1. Acceptance of Terms</h3>
+                <p>By accessing or using Lens Today (the "Service"), you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you must discontinue use immediately.</p>
+
+                <h3>2. Nature of the Service (News Aggregation)</h3>
+                <p>Our Service functions as an automated news aggregator. We independently fetch, curate, and display headlines, summaries, snippets, and links to news articles and content originating from third-party websites and publishers. We do not write, edit, or claim authorship over the aggregated news content displayed on the platform.</p>
+
+                <h3>3. Third-Party Content and External Links</h3>
+                <p>Because our Service automatically indexes content from external online sources:</p>
+                <ul>
+                    <li><strong>No Endorsement:</strong> The display of third-party articles does not constitute an endorsement, guarantee of accuracy, or agreement with the views expressed in those articles.</li>
+                    <li><strong>"As-Is" Delivery:</strong> All aggregated content is provided "as is" for informational purposes. We assume no liability for errors, omissions, misleading information, or offensive material found in the original source content.</li>
+                    <li><strong>External Links:</strong> Clicking on a news link will direct you to the original publisher's website. We are not responsible for the privacy practices, terms, or content of those external sites.</li>
+                </ul>
+
+                <h3>4. Copyright and Intellectual Property</h3>
+                <p>We respect the intellectual property rights of news publishers and creators.</p>
+                <ul>
+                    <li><strong>Ownership:</strong> The copyrights for the aggregated headlines, article snippets, and featured images remain entirely with the original authors, publishers, and copyright holders.</li>
+                    <li><strong>Fair Use:</strong> We display limited excerpts and links under the principles of fair use to direct traffic to the original source.</li>
+                    <li><strong>Our Property:</strong> The proprietary code, design, logos, and specific curation algorithms belonging to Lens Today are our exclusive property.</li>
+                </ul>
+
+                <h3>5. Takedown Requests (DMCA / Content Removal)</h3>
+                <p>If you are a publisher or copyright owner and believe that our automated indexing has displayed your content in a way that constitutes copyright infringement, or if you simply wish to have your site opted out of our aggregator, please contact us at support@lenstoday.com. We will promptly review and remove the requested content or block our system from indexing your site in the future.</p>
+
+                <h3>6. Prohibited User Activities</h3>
+                <p>As a user of our Service, you agree not to:</p>
+                <ul>
+                    <li>Use automated scripts, scrapers, or bots to harvest the aggregated data or user information from our platform.</li>
+                    <li>Interfere with, disrupt, or create an undue burden on the platform or connected networks.</li>
+                    <li>Reproduce or redistribute our specific curated feeds without prior written permission.</li>
+                </ul>
+
+                <h3>7. Limitation of Liability and Warranties</h3>
+                <p>The Service is provided on an "as-is" and "as-available" basis. We make no warranties, expressed or implied, regarding the reliability, accuracy, or continuous availability of the platform or the third-party feeds it relies on. Under no circumstances will we be held liable for any direct, indirect, incidental, or consequential damages resulting from your use of the Service or reliance on any aggregated news.</p>
+
+                <h3>8. Changes to the Service</h3>
+                <p>Because we rely on third-party websites, we reserve the right to modify, suspend, or discontinue any part of the Service—including the removal of specific news sources—at any time without notice.</p>
+
+                <h3>9. Governing Law</h3>
+                <p>These Terms of Service are governed by and construed in accordance with the laws of your applicable jurisdiction.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="privacy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('privacy-modal')">&times;</span>
+            <h2>Privacy Policy</h2>
+            <div class="modal-body">
+                <p class="last-updated"><em>Last Updated: June 23, 2026</em></p>
+                <p>This Privacy Policy explains how Lens Today ("we," "us," or "our") collects, uses, protects, and handles your personal information when you visit our website and use our automated news aggregation services.</p>
+
+                <h3>1. The Nature of Our Service</h3>
+                <p>We operate an automated news aggregator that indexes and displays content from third-party online publishers. Due to the nature of our automated web scraping and content delivery, we may process user data differently than a traditional publisher.</p>
+
+                <h3>2. Information We Collect</h3>
+                <p>We collect data to improve the platform, ensure security, and understand how users interact with our curated feeds.</p>
+                <ul>
+                    <li><strong>Automatically Collected Data:</strong> When you visit our site, our servers automatically record information, including your IP address, browser type, device details, referring URLs, and the pages you view on our site.</li>
+                    <li><strong>Voluntarily Provided Data:</strong> If you sign up for a newsletter, contact us, or create an account, we may collect your name, email address, and any other information you choose to provide.</li>
+                </ul>
+
+                <h3>3. Cookies and Tracking Technologies</h3>
+                <p>We use cookies, web beacons, and similar tracking technologies to enhance user experience and analyze traffic.</p>
+                <ul>
+                    <li><strong>Essential Cookies:</strong> Required for the basic functioning of the site.</li>
+                    <li><strong>Analytics Cookies:</strong> Used to track how visitors navigate our aggregated news feeds (e.g., Google Analytics).</li>
+                    <li><strong>Your Choices:</strong> You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, some features of our Service may not function properly without them.</li>
+                </ul>
+
+                <h3>4. How We Use Your Information</h3>
+                <p>We use the collected data for various purposes, including:</p>
+                <ul>
+                    <li>To provide, maintain, and improve our automated aggregation systems.</li>
+                    <li>To analyze user engagement to better curate news categories.</li>
+                    <li>To detect, prevent, and address technical issues or fraudulent activity.</li>
+                    <li>To communicate with you regarding updates, support, or inquiries.</li>
+                </ul>
+
+                <h3>5. Third-Party Links and Embedded Content</h3>
+                <p>Our primary function is providing links to external news articles. We do not control and are not responsible for the privacy practices of those third-party websites. When you click a headline and leave our site, we encourage you to read the privacy statements of every external publisher you visit.</p>
+
+                <h3>6. Sharing Your Information</h3>
+                <p>We do not sell, trade, or rent your personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification with our business partners and trusted affiliates. We may also disclose information:</p>
+                <ul>
+                    <li>To comply with a legal obligation or respond to a lawful request.</li>
+                    <li>To protect the rights, property, or safety of our platform, our users, or the public.</li>
+                    <li>To third-party service providers (like web hosts or analytics tools) who assist us in operating our website, provided they agree to keep this information confidential.</li>
+                </ul>
+
+                <h3>7. Data Security</h3>
+                <p>We implement reasonable administrative, technical, and physical security measures to protect your personal information. However, no method of transmission over the Internet or method of electronic storage is 100% secure.</p>
+
+                <h3>8. Your Privacy Rights (GDPR / CCPA)</h3>
+                <p>Depending on your location, you may have specific rights regarding your personal data:</p>
+                <ul>
+                    <li><strong>Right to Access:</strong> You can request copies of your personal data.</li>
+                    <li><strong>Right to Rectification:</strong> You can request that we correct inaccurate information.</li>
+                    <li><strong>Right to Erasure (Right to be Forgotten):</strong> You can request that we delete your personal data under certain conditions.</li>
+                    <li><strong>Right to Object/Opt-Out:</strong> You can object to data processing or opt out of having your data sold (though we do not currently sell data).</li>
+                </ul>
+                <p>To exercise any of these rights, please contact us using the information below. We will respond within the timeframe required by applicable law.</p>
+
+                <h3>9. Changes to This Privacy Policy</h3>
+                <p>We may update our Privacy Policy from time to time to reflect changes in our automated processes or legal requirements. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
+
+                <h3>10. Contact Us</h3>
+                <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+                <ul>
+                    <li><strong>Email:</strong> support@lenstoday.com</li>
+                    <li><strong>Website:</strong> <a href="#" onclick="closeModal('privacy-modal'); openModal('terms-modal'); return false;">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
